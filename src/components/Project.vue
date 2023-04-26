@@ -37,14 +37,14 @@ const projects = [
 
 <template>
 
-  <section class="projects">
-      <ProjectItem v-for="project in projects"
-                   :lang="project.language"
-                   :link="project.link"
-                   :year="project.year">
-          {{ project.name }}
-      </ProjectItem>
-  </section>
+    <section class="projects">
+        <ProjectItem v-for="project in projects"
+                     :lang="project.language"
+                     :link="project.link"
+                     :year="project.year">
+            {{ project.name }}
+        </ProjectItem>
+    </section>
 
 </template>
 
@@ -55,7 +55,7 @@ const projects = [
     justify-content: center;
     flex-flow: wrap;
     gap: 30px;
-    margin: 50px auto;
+    margin: 100px 0 50px auto;
 }
 
 </style>

@@ -91,56 +91,61 @@ const tools = [
 
 <template>
     <section class="stack-content">
-    <ul>
-        <h1>Langages</h1>
-        <StackItem v-for="language in languages" :icon="language.icon" :year="language.year">
-            {{ language.name }}
-        </StackItem>
-    </ul>
-    <ul>
-        <h1>Technologies</h1>
-        <StackItem v-for="techno in technologies" :icon="techno.icon" :year="techno.year" :link="techno.link">
-            {{ techno.name }}
-        </StackItem>
+        <ul>
+            <h1>Langages</h1>
+            <StackItem v-for="language in languages" :icon="language.icon" :year="language.year">
+                {{ language.name }}
+            </StackItem>
+        </ul>
+        <ul>
+            <h1>Technologies</h1>
+            <StackItem v-for="techno in technologies" :icon="techno.icon" :year="techno.year" :link="techno.link">
+                {{ techno.name }}
+            </StackItem>
 
-    </ul>
-    <ul>
-        <h1>Éditeurs</h1>
-        <StackItem v-for="editor in editors" :icon="editor.icon" :year="editor.year" :link="editor.link">
-            {{ editor.name }}
-        </StackItem>
-    </ul>
-    <ul>
-        <h1>Outils</h1>
-        <StackItem v-for="tool in tools" :icon="tool.icon" :year="tool.year" :link="tool.link">
-            {{ tool.name }}
-        </StackItem>
-    </ul>
+        </ul>
+        <ul>
+            <h1>Éditeurs</h1>
+            <StackItem v-for="editor in editors" :icon="editor.icon" :year="editor.year" :link="editor.link">
+                {{ editor.name }}
+            </StackItem>
+        </ul>
+        <ul>
+            <h1>Outils</h1>
+            <StackItem v-for="tool in tools" :icon="tool.icon" :year="tool.year" :link="tool.link">
+                {{ tool.name }}
+            </StackItem>
+        </ul>
     </section>
 </template>
 
 <style scoped lang="scss">
 .stack-content {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: wrap;
-    gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  gap: 20px;
 }
+
 ul {
   font-weight: bold;
-    h1 {
-        text-align: center;
-        position: relative;
-        &:after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: #2F80ED;
-            border-radius: 4px;
-        }
+  margin: 50px auto;
+
+  h1 {
+    text-align: center;
+    padding: 5px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: #2F80ED;
+      border-radius: 4px;
     }
+  }
 }
 </style>
