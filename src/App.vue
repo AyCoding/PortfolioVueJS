@@ -2,6 +2,7 @@
 import TheHeader from '@/components/TheHeader.vue'
 import Stack from "@/components/Stack.vue";
 import Project from "@/components/Project.vue";
+import Links from "@/components/Links.vue";
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import Project from "@/components/Project.vue";
     <div class="content">
         <Project/>
         <Stack/>
+        <Links/>
     </div>
 
     <footer>

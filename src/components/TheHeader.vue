@@ -26,6 +26,7 @@ const hero = ref({
   background: #2F80ED;
   color: #F2F2F2;
 
+  text-align: center;
   height: 400px;
 
   h1 {
